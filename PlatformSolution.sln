@@ -5,7 +5,18 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlatformService", "PlatformService\PlatformService.csproj", "{DA164BE7-F540-42F7-B0BB-25BA81EE9868}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandsService", "CommandsService\CommandsService.csproj", "{1C411396-B276-4360-8150-774282A3F8A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandsService", "CommandsService\CommandsService.csproj", "{1C411396-B276-4360-8150-774282A3F8A4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "k8s", "k8s", "{3233E28F-359A-4920-8A49-F03BDA6500F6}"
+	ProjectSection(SolutionItems) = preProject
+		..\K8S\commands-depl.yml = ..\K8S\commands-depl.yml
+		..\K8S\ingress-srv.yml = ..\K8S\ingress-srv.yml
+		..\K8S\local-pvc.yml = ..\K8S\local-pvc.yml
+		..\K8S\mssql-plat-depl.yml = ..\K8S\mssql-plat-depl.yml
+		..\K8S\platforms-depl.yml = ..\K8S\platforms-depl.yml
+		..\K8S\platforms-np-srv.yml = ..\K8S\platforms-np-srv.yml
+		..\K8S\rabbitmq-depl.yml = ..\K8S\rabbitmq-depl.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

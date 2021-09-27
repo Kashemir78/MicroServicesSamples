@@ -9,7 +9,7 @@ using PlatformService.Dtos;
 using RabbitMQ.Client;
 
 namespace PlatformService.AsyncDataServices {
-    public class MessageBusClient : IMessageBusClient, IDisposable {
+    public class MessageBusClient : IMessageBusClient {
         private readonly IConfiguration _configuration;
         private readonly IConnection _connection;
         private readonly IModel _channel;
